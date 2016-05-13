@@ -69,6 +69,6 @@ class MusicasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def musica_params
-      params.require(:musica).permit(:nome, :tamanho, :genero, :artista, :album, :usuario_id)
+      params.require(:musica).permit(:idmusic, :nome, :tamanho, :genero, :artista, :album, :usuario_id)
     end
 end

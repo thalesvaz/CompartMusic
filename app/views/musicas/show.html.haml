@@ -1,24 +1,28 @@
-%p#notice= notice
+%h1 Detalhes da musica
 
-%p
-  %b Nome:
-  = @musica.nome
-%p
-  %b Tamanho:
-  = @musica.tamanho
-%p
-  %b Genero:
-  = @musica.genero
-%p
-  %b Artista:
-  = @musica.artista
-%p
-  %b Album:
-  = @musica.album
-%p
-  %b Usuario:
-  = @musica.usuario
+%div.dt
+  %p
+    %b Idmusic:
+    = @musica.idmusic
+  %p
+    %b Nome:
+    = @musica.nome
+  %p
+    %b Tamanho:
+    = @musica.tamanho
+  %p
+    %b Genero:
+    = @musica.genero
+  %p
+    %b Artista:
+    = @musica.artista
+  %p
+    %b Album:
+    = @musica.album
+  %p
+    %b Usuario:
+    = @musica.usuario.username
 
-= link_to 'Edit', edit_musica_path(@musica)
+= link_to 'Editar', edit_musica_path(@musica), :class => 'allbt'
 \|
-= link_to 'Back', musicas_path
+= link_to 'Voltar', musicas_path, :class => 'allbt'

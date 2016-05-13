@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160513032001) do
+ActiveRecord::Schema.define(version: 20160513040930) do
 
   create_table "musicas", force: :cascade do |t|
+    t.string   "idmusic"
     t.string   "nome"
     t.string   "tamanho"
     t.string   "genero"
@@ -43,6 +44,7 @@ ActiveRecord::Schema.define(version: 20160513032001) do
   end
 
   create_table "usuarios", force: :cascade do |t|
+    t.string   "iduser"
     t.string   "username"
     t.string   "senha"
     t.string   "nome"

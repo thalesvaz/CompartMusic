@@ -2,8 +2,8 @@
   = f.error_notification
 
   .form-inputs
-    = f.association :playlist
-    = f.association :musica
+    = f.association :playlist, label_method: :nome
+    = f.association :musica, label_method: :nome
 
   .form-actions
-    = f.button :submit
+    = f.submit "Salvar"

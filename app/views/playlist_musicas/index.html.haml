@@ -1,4 +1,4 @@
-%h1 Listing playlist_musicas
+%h1 Gerenciar lista de musicas
 
 %table
   %thead
@@ -12,12 +12,12 @@
   %tbody
     - @playlist_musicas.each do |playlist_musica|
       %tr
-        %td= playlist_musica.playlist
-        %td= playlist_musica.musica
-        %td= link_to 'Show', playlist_musica
-        %td= link_to 'Edit', edit_playlist_musica_path(playlist_musica)
-        %td= link_to 'Destroy', playlist_musica, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= playlist_musica.playlist.nome
+        %td= playlist_musica.musica.nome
+        %td= link_to 'Detalhes', playlist_musica, :class => 'allbt'
+        %td= link_to 'Editar', edit_playlist_musica_path(playlist_musica), :class => 'allbt'
+        %td= link_to 'Excluir', playlist_musica, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'allbt'
 
 %br
 
-= link_to 'New Playlist musica', new_playlist_musica_path
+= link_to 'Adicionar musicas', new_playlist_musica_path, :class => 'allbt'

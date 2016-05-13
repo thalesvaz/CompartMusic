@@ -1,11 +1,11 @@
-%h1 Listing usuarios
+%h1 Todos os usuarios
 
 %table
   %thead
     %tr
+      %th Iduser
       %th Username
       %th Senha
-      %th Nome
       %th Email
       %th Endereco
       %th
@@ -15,15 +15,15 @@
   %tbody
     - @usuarios.each do |usuario|
       %tr
+        %td= usuario.iduser
         %td= usuario.username
         %td= usuario.senha
-        %td= usuario.nome
         %td= usuario.email
         %td= usuario.endereco
-        %td= link_to 'Show', usuario
-        %td= link_to 'Edit', edit_usuario_path(usuario)
-        %td= link_to 'Destroy', usuario, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Detalhes', usuario, :class => 'allbt'
+        %td= link_to 'Editar', edit_usuario_path(usuario), :class => 'allbt'
+        %td= link_to 'Excluir', usuario, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'allbt'
 
 %br
 
-= link_to 'New Usuario', new_usuario_path
+= link_to 'Criar novo Usuario', new_usuario_path, :class => 'allbt'

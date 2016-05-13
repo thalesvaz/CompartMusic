@@ -13,3 +13,273 @@
  *= require_tree .
  *= require_self
  */
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a{
+	cursor: pointer;
+}
+
+p{
+  text-align: justify;
+  text-indent: 50px;
+}
+
+
+html{
+	font-family: 'Titillium Web', sans-serif;
+  color: #D4D4D4;
+  font-size: 15px;
+}
+
+th, label, b{
+  color: #06B1AC;
+}
+
+
+body{
+  background: url('https://ap.imagensbrasil.org/images/bgc9cb6.jpg');
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+.main{
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.ft{
+  bottom: 0%;
+  width: 80%;
+  margin-left: 135px;
+  color: #06B1AC;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  border-left: 1.5px solid #06B1AC;
+  border-right: 1.5px solid #06B1AC;
+  height: 100px;
+  font-size: 18px;
+}
+
+.hd{
+  background-color: rgba(0,0,0,0.4);
+}
+
+.all{
+  height: 800px;
+  margin: 0 auto 0;
+  width: 80%;
+  padding: 5px;
+  border-left: 1.5px solid #06B1AC;
+  border-right: 1.5px solid #06B1AC;
+  background: rgba(0,0,0,0.4);
+}
+
+.fttitle{
+  position: relative;
+  float: right;
+  top: -50px;
+  left: -130px;
+  text-shadow: 2px 3px 1px purple; 
+}
+
+.logo{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  left: 350px;
+}
+
+.logo2{
+  position: relative;
+  height: 40px;
+  left: 450px;
+  top: -20px;
+}
+
+.logo2:hover{
+
+}
+
+/*teste*/
+td{
+  text-align: center;
+}
+
+
+/*NEON*/
+.subtitle {
+  position: relative;
+  float: right;
+  font-family: 'Amatic SC', cursive;
+  top: 170px;
+  left: -25px;
+  font-size: 60px;
+  text-decoration: none;
+  transition: all 0.5s;
+  text-shadow: 1px 9px 0px #000;
+  animation: neon 1.0s cubic-bezier(0.93, 0.80, 0.30, 9) infinite alternate;
+  color: #fff;
+}
+
+.dois{
+  top: 170px;
+  left: -260px;
+  animation: neon 1.0s cubic-bezier(0.93, 0.80, 0.30, 0.2) infinite alternate;
+
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+.menu li {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  padding-left: 6px;
+  text-align: center;
+}
+.menu li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098d1;
+  height: 1px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.menu li:hover:before, .menu li:focus:before, .menu li:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
+/*EFEITOS MENU*/
+
+.menu{
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.menu li{
+  display: inline-block;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #06B1AC;
+  font-size: 18px;
+  padding: 8px 12px;
+  width: 170px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu li:hover{
+  background-color: rgba(0,0,0,1);
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.menu li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 90%;
+  background: #2098d1;
+  height: 1px;
+  transition-property: right;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.menu li:hover:before, .menu li:focus:before, .menu li:active:before {
+  right: 0;
+}
+
+/*SIMPLE FORM'S*/
+.form-inputs, input{
+  font-size: 17px;
+  text-align: center;
+}
+
+/*Diferente*/
+input[type=submit]{
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: underline;
+  color: #06B1AC;
+  cursor: pointer;
+  font-size: 17px;
+  outline: none;
+  background-color: rgba(0,0,0,0.3);
+  background: transparent;
+  border-style: none;
+}
+
+
+input[type=text],[type=email],[type=password]{
+  background-color: white;
+  margin: 3px;
+  margin-left: 10px;
+  color: #000;
+  border: 1px solid #06B1AC;
+  border-radius: 10px;
+  align: center;
+}
+
+table{
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.tbmusica{
+  margin-top: 0px;
+}
+
+.dt{
+  margin-left: 40%;
+  margin-bottom: 30px;
+}

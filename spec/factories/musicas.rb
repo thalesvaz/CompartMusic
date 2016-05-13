@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :musica do
+    idmusic "MyString"
     nome "MyString"
     tamanho "MyString"
     genero "MyString"

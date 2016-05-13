@@ -1,9 +1,20 @@
-%p#notice= notice
+%h2 Detalhes da playlist
 
-%p
-  %b Nome:
-  = @playlist.nome
+%div.dt
+  %p
+    %b Nome:
+    = @playlist.nome
 
-= link_to 'Edit', edit_playlist_path(@playlist)
+%h2 Musicas dessa playlist
+
+%tbody
+  - @playlist.playlist_musicas.each do |musica| 
+    %tr
+      %td= musica.musica.nome
+    %br
+
+
+
+= link_to 'Editar', edit_playlist_path(@playlist), :class => 'allbt'
 \|
-= link_to 'Back', playlists_path
+= link_to 'Voltar', playlists_path, :class => 'allbt'

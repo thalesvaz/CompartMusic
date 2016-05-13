@@ -1,31 +1,31 @@
-%h1 Listing musicas
+%h1 Todas as musicas
 
 %table
   %thead
     %tr
-      %th Nome
-      %th Tamanho
-      %th Genero
-      %th Artista
-      %th Album
-      %th Usuario
-      %th
-      %th
-      %th
+      %div.tabletitle
+        %th Idmusic
+        %th Nome
+        %th Tamanho
+        %th Genero
+        %th Artista
+        %th Album
+        %th Usuario
 
   %tbody
     - @musicas.each do |musica|
       %tr
+        %td= musica.idmusic
         %td= musica.nome
         %td= musica.tamanho
         %td= musica.genero
         %td= musica.artista
         %td= musica.album
-        %td= musica.usuario
-        %td= link_to 'Show', musica
-        %td= link_to 'Edit', edit_musica_path(musica)
-        %td= link_to 'Destroy', musica, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= musica.usuario.username if !musica.usuario.nil?
+        %td= link_to 'Detalhes', musica, :class => 'allbt'
+        %td= link_to 'Editar', edit_musica_path(musica), :class => 'allbt'
+        %td= link_to 'Excluir', musica, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'allbt'
 
 %br
 
-= link_to 'New Musica', new_musica_path
+= link_to 'Adicionar nova Musica', new_musica_path, :class => 'allbt'

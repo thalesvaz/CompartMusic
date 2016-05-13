@@ -1,21 +1,31 @@
-%p#notice= notice
+%h2 Detalhes do usuario
 
-%p
-  %b Username:
-  = @usuario.username
-%p
-  %b Senha:
-  = @usuario.senha
-%p
-  %b Nome:
-  = @usuario.nome
-%p
-  %b Email:
-  = @usuario.email
-%p
-  %b Endereco:
-  = @usuario.endereco
+%div.dt
+  %p
+    %b Iduser: 
+    = @usuario.iduser
+  %p
+    %b Username: 
+    = @usuario.username
+  %p
+    %b Senha: 
+    = @usuario.senha
+  %p
+    %b Email: 
+    = @usuario.email
+  %p
+    %b Endereco: 
+    = @usuario.endereco
 
-= link_to 'Edit', edit_usuario_path(@usuario)
+%h2 Musicas do usuario
+
+
+%tbody
+  - @usuario.musicas.each do |musica| 
+    %tr
+      %td= musica.nome
+    %br
+
+= link_to 'Editar', edit_usuario_path(@usuario), :class => 'allbt'
 \|
-= link_to 'Back', usuarios_path
+= link_to 'Voltar', usuarios_path, :class => 'allbt'

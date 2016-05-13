@@ -1,12 +1,13 @@
 %p#notice= notice
 
-%p
-  %b Playlist:
-  = @playlist_musica.playlist
-%p
-  %b Musica:
-  = @playlist_musica.musica
+%div.dt
+	%p
+		%b Playlist:
+		= @playlist_musica.playlist.nome
+	%p
+		%b Musica:
+		= @playlist_musica.musica.nome
 
-= link_to 'Edit', edit_playlist_musica_path(@playlist_musica)
+= link_to 'Editar', edit_playlist_musica_path(@playlist_musica), :class => 'allbt'
 \|
-= link_to 'Back', playlist_musicas_path
+= link_to 'Voltar', playlist_musicas_path, :class => 'allbt'

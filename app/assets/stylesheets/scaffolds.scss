@@ -1,4 +1,4 @@
-body {
+/*body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -70,4 +70,30 @@ div {
     font-size: 12px;
     list-style: square;
   }
+} cor main #069FB1*/
+
+a{
+  cursor: pointer;
+  color: #06B1AC;
 }
+
+
+.menu li a{
+  text-decoration: none;
+  list-style: none;
+  color: #06B1AC;
+}
+
+
+input{
+  outline: none;
+  background-color: rgba(0,0,0,0.3);
+  background: transparent;
+  border-style: none;
+}
+
+
+
+
+
+
