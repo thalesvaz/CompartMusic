@@ -17,15 +17,6 @@
     %b Endereco: 
     = @usuario.endereco
 
-%h2 Musicas do usuario
-
-
-%tbody
-  - @usuario.musicas.each do |musica| 
-    %tr
-      %td= musica.nome
-    %br
-
 = link_to 'Editar', edit_usuario_path(@usuario), :class => 'allbt'
 \|
 = link_to 'Voltar', usuarios_path, :class => 'allbt'
