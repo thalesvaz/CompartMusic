@@ -15,8 +15,8 @@
  */
 
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script);
 
 
 *{
@@ -31,9 +31,19 @@ a{
 
 p{
   text-align: justify;
-  text-indent: 50px;
+  text-indent: 20px;
 }
 
+.colorp{
+  color: #06B1AC;
+}
+.centerp{
+  text-align: center;
+}
+.fontp{
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 32px;
+}
 
 html{
 	font-family: 'Titillium Web', sans-serif;
@@ -53,9 +63,15 @@ body{
 }
 
 .main{
+  top: 15px;
+  position: relative;
   background-color: rgba(0,0,0,0.4);
   text-align: center;
   border-radius: 10px;
+}
+
+.bgf{
+  opacity: 0.1;
 }
 
 .ft{
@@ -68,7 +84,7 @@ body{
   background-color: rgba(0,0,0,0.6);
   border-left: 1.5px solid #06B1AC;
   border-right: 1.5px solid #06B1AC;
-  height: 100px;
+  height: 150px;
   font-size: 18px;
 }
 
@@ -86,14 +102,6 @@ body{
   background: rgba(0,0,0,0.4);
 }
 
-.fttitle{
-  position: relative;
-  float: right;
-  top: -50px;
-  left: -130px;
-  text-shadow: 2px 3px 1px purple; 
-}
-
 .logo{
   position: relative;
   width: 300px;
@@ -104,8 +112,8 @@ body{
 .logo2{
   position: relative;
   height: 40px;
-  left: 450px;
-  top: -20px;
+  left: 315px;
+  top: -10px;
 }
 
 .logo2:hover{
@@ -336,4 +344,28 @@ table{
   margin-top: 15px;
   margin-bottom: 20px;
   width: 20%;
+}
+
+.devimg{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  left: -200px;
+  margin-left: 10px;
+}
+
+#ftsubtitle{
+  position: relative;
+  top: -24px;
+  left: -313px;
+}
+
+
+.fttitle{
+  position: relative;
+  float: right;
+  top: -50px;
+  left: -130px;
+  text-shadow: 2px 3px 1px purple; 
 }
