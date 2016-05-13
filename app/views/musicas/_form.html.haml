@@ -1,0 +1,13 @@
+= simple_form_for(@musica) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :nome
+    = f.input :tamanho
+    = f.input :genero
+    = f.input :artista
+    = f.input :album
+    = f.association :usuario
+
+  .form-actions
+    = f.button :submit

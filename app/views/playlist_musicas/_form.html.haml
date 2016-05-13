@@ -1,0 +1,9 @@
+= simple_form_for(@playlist_musica) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :playlist
+    = f.association :musica
+
+  .form-actions
+    = f.button :submit

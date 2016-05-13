@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @musica.nome
+%p
+  %b Tamanho:
+  = @musica.tamanho
+%p
+  %b Genero:
+  = @musica.genero
+%p
+  %b Artista:
+  = @musica.artista
+%p
+  %b Album:
+  = @musica.album
+%p
+  %b Usuario:
+  = @musica.usuario
+
+= link_to 'Edit', edit_musica_path(@musica)
+\|
+= link_to 'Back', musicas_path
