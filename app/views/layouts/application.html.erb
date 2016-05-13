@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Compartmusic</title>
+  <title>Compartmusic ONLINE</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="all">
+	<header class="hd">
+		<%= render 'layouts/header' %>
+	</header>
+	<div class="main">
+		<%= yield %>
+	</div>
+</div>
+<footer class="ft">
+	<%= render 'layouts/footer' %>
+</footer>
 </body>
 </html>
+
