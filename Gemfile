@@ -38,7 +38,6 @@ gem 'ransack', '~> 1.5.1'
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
 
   gem 'sqlite3'
 
@@ -76,5 +75,5 @@ group :development do
   gem "rails_apps_testing"
   gem 'brakeman'
   gem 'spring'
-  
+  gem 'web-console', '~> 2.0'  
 end
