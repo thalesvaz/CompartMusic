@@ -75,15 +75,13 @@ body{
 }
 
 .ft{
-  bottom: 0%;
-  width: 80%;
-  margin-left: 135px;
+  position: absolute;
+  bottom: -97%;
+  width: 79%;
   color: #06B1AC;
   padding: 40px;
   text-align: center;
   background-color: rgba(0,0,0,0.6);
-  border-left: 1.5px solid #06B1AC;
-  border-right: 1.5px solid #06B1AC;
   height: 150px;
   font-size: 18px;
 }
